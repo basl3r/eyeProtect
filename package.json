@@ -1,8 +1,39 @@
 {
-  "name": "eyeProtect",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/basl3r/eyeProtect.git",
-  "author": "Adrian Grociak <ajgrociak@gmail.com>",
-  "license": "MIT"
+  "name": "initial",
+  "productName": "eyeProtect",
+  "author": "Adrian Grociak",
+  "version": "1.0.1",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron main.js",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "electron": "^29.1.5",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.adgx.eyeProtect",
+    "win": {
+      "icon": "app/build/icons/icon.ico"
+    },
+    "mac": {
+      "icon": "app/build/icons/icon.icns"
+    },
+    "linux": {
+      "icon": "app/build/icons/icon.png"
+    },
+    "extraFiles": [
+      {
+        "from": "app/images",
+        "to": "images"
+      }
+    ]
+  }
 }
