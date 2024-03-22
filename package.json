@@ -1,0 +1,8 @@
+{
+  "name": "eyeProtect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/basl3r/eyeProtect.git",
+  "author": "Adrian Grociak <ajgrociak@gmail.com>",
+  "license": "MIT"
+}
